@@ -2,7 +2,7 @@ var videoinstr = '';
 var attempt = 0;
 function result() {
 	//document.getElementById("troubbut").disabled=true;
-	document.getElementById('instr').innerHTML='<p>Настройка завершена. Для сохранения результата нажмите на видео правой кнопкой мыши и в меню выберите пункт "Параметры" ("Settings"). Затем выберите вкладку настроек конфиденциальности сайтов (вкладка, где изображен монитор с глазом) и отметьте опцию "Запомнить" ("Remember"). После этого можете закрыть окно настроек и текущую вкладку в браузере</p>';
+	document.getElementById('instr').innerHTML='<p>Настройка видео завершена. Для сохранения результата нажмите на видео правой кнопкой мыши и в меню выберите пункт "Параметры" ("Settings"). Затем выберите вкладку настроек конфиденциальности сайтов (вкладка, где изображен монитор с глазом) и отметьте опцию "Запомнить" ("Remember").</p><p>Проверьте, правильно ли отображается текст кейса: <a href="http://client.webassessment.ru/Account/LogOnTest/5ffdf1f9-28f0-4409-8d79-8e67b1174383" target="_blank"><u>Нажмите, чтобы проверить</u></a>.</p><p>После этого можете закрыть окно настроек и текущую вкладку в браузере</p>';
 	document.getElementById('troubbut').style.display = 'none';
 	document.getElementById('okbut').style.display = 'none';
 }
