@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" class="js">
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web@ssessment :: Проверка соединения</title>
+    <link href="../css/reset.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="../css/template.screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/swfobject/src/swfobject.js"></script> 
+
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script src="http://static.opentok.com/v1.1/js/TB.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/TB.diagnostic.min.js"></script>
+    <!--[if IE ]>
+      <link href="../css/template.ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+	<script type="text/javascript" src="../js/checker.js"></script>
+	<!--<link href="http://static.opentok.com/opentok/assets/css/demos.css" type="text/css" rel="stylesheet" >-->
+	
+	<script type="text/javascript" src="../js/videochecker.js"></script>
+	
+	<script type="text/javascript" src="http://assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+	
+  </head>
+  <body onload="init(); CheckAll();">
+      <div id="body-wrap">
+        <div id="header-wrap">
+          <div class="header">Web@ssessment. Проверка соединения</div>
+        </div>
+        <div id="content-wrap">
+          <div id="content-top-wrap">
+            <div class="leftcol">
+              <form id="user-system" name="check" class="webform-client-form">
+                <div class="form-item">
+                  <label for="os">Операционная Система</label>                  
+                  <input type="text" class="os" name="os" readonly="true">
+                  <img name="OSstatus" src="../img/spinner2.gif"/>
+                </div>
+                <div class="form-item">
+                  <label for="Browser">Браузер</label>
+                  <input type="text" class="browser" name="Browser" readonly="true">
+                  <img name="Browstatus" src="../img/spinner2.gif" />
+                </div>
+                <div class="form-item">
+                  <label for="FPversion">Версия Flash Player</label>
+                  <input type="text" class="flash" name="FPversion" readonly="true">
+                  <img name="FPstatus" src="../img/spinner2.gif" />
+                </div>
+                <div class="form-item">
+                  <label for="PortAv">Доступность портов</label>
+                  <input type="text" class="ports" name="PortAv" readonly="true">
+                  <img name="Portstatus" src="../img/spinner2.gif" />
+                </div>
+              </form>
+            </div>
+            <div class="rightcol">
+              <ul class="results">
+                <li id="osres" class="os"></li>
+                <li id="browres" class="browser"></li>
+                <li id="flashres" class="flash"></li>
+                <li id="portsres" class="ports"></li>
+              </ul>
+            </div>
+          </div>
+          <div id="content-middle-wrap">
+            <div class="top">
+              <div class="header">Настройка видео</div>
+            </div>
+            <div class="leftcol">
+              <div id="publisherContainer" class="video">
+                <object id ="opentok_publisher" width="264" height="198" type="application/x-shockwave-flash" style="outline: medium none; visibility: visible;" data="http://static.opentok.com/v1.1.6/flash/f_publishwidget.swf?partnerId=34074032"></object>
+              </div>
+            </div>
+            <div class="rightcol">
+              <div id='instr' class="settings flash-settings">
+       <!--         <p><br></p>
+                <p>В окне Flash-видео (слева) нажмите "Разрешить" ("Allow").<br></p>
+                <p>Если Вы видите себя, нажмите кнопку "Далее", если не видите - "Найти решение"</p>-->
+              </div>
+              <div class="buttons">
+                <input type="button" id="okbut" onclick="result();" value="Далее" class="btn-custom allow">
+                <input type="button" id="troubbut" onclick="troub();" value="Найти решение" class="btn-custom deny">
+              </div>
+            </div>
+          </div>
+          <div id="content-bottom-wrap">
+            <div class="message">
+              <div class="btn" onclick="showIFrame('http://ecosystem.zendesk.com/account/dropboxes/20292068')">Расскажите нам о результатах</div>
+            </div>
+			<form id="bottom-form">
+				<div id="container" style="display:none;">
+				
+				</div>
+            
+            <!--  <div id="form-component-subject" class="form-item textfield">
+                <label for="subject">Tema:</label>                  
+                <input type="text" id="subject" class="form-text" name="subject" required>
+              </div>
+              <div id="form-component-message" class="form-item textarea">
+                <label for="message">Сообщение:</label>                  
+                <textarea id="message" class="form-textarea" rows="5" cols="60" name="message" required></textarea>
+              </div>
+              <div id="form-component-name" class="form-item textfield">
+                <label for="name">Имя:</label>                  
+                <input type="text" id="name" class="form-text" name="name" required>
+              </div>
+              <div id="form-component-email" class="form-item email">
+                <label for="email">e-mail:</label>                  
+                <input type="email" id="email" class="form-email" name="email" required>
+              </div>
+              <div id="edit-actions" class="form-actions">
+                <input type="submit" id="submit" class="form-submit" value="Отправить" name="op">
+              </div>-->
+            </form>          
+          </div>
+        </div>
+        <div id="pseudo-footer"></div>
+      </div>
+      <div id="footer-wrap">
+        <div class="inner">
+          <div class="contacts">
+            <a href="http://support.webassessment.ru">Портал тех.поддержки</a> <span class="right">тел. +7 (495) 645-2115 <a href="mailto:support@webassessment.net">support@webassessment.net</a></span>
+          </div>
+          <div class="copyright">
+            <a href="http://www.ecopsy.ru/">ЭКОПСИ Консалтинг</a>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

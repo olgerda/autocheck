@@ -1,0 +1,508 @@
+.fields a,
+.fields abbr,
+.fields address,
+.fields aside,
+.fields audio,
+.fields b,
+.fields bdi,
+.fields bdo,
+.fields blockquote,
+.fields br,
+.fields caption,
+.fields cite,
+.fields code,
+.fields col,
+.fields colgroup,
+.fields dd,
+.fields del,
+.fields dfn,
+.fields div,
+.fields dl,
+.fields dt,
+.fields em,
+.fields embed,
+.fields figcaption,
+.fields figure,
+.fields h2,
+.fields h3,
+.fields h4,
+.fields h5,
+.fields h6,
+.fields hgroup,
+.fields hr,
+.fields i,
+.fields img,
+.fields ins,
+.fields kbd,
+.fields li,
+.fields mark,
+.fields object,
+.fields ol,
+.fields p,
+.fields param,
+.fields q,
+.fields rp,
+.fields rt,
+.fields ruby,
+.fields s,
+.fields samp,
+.fields section,
+.fields small,
+.fields source,
+.fields span,
+.fields strong,
+.fields sub,
+.fields sup,
+.fields table,
+.fields tbody,
+.fields td,
+.fields tfoot,
+.fields th,
+.fields thead,
+.fields time,
+.fields tr,
+.fields track,
+.fields ul,
+.fields var,
+.fields video,
+.fields wbr {
+  font-size: 1em;
+}
+
+@font-face {
+  font-family: "Leto";
+  src: url('fonts/truetype');
+  src: url('fonts/truetype?#iefix') format('eot'), url('fonts/LetoSansCondensed.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Leto";
+  src: url('fonts/truetype');
+  src: url('fonts/truetype?#iefix') format('eot'), url('fonts/LetoSansCondensed-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Leto";
+  src: url('fonts/truetype');
+  src: url('fonts/truetype?#iefix') format('eot'), url('fonts/LetoSansCondensed-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+#body-wrap {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -53px;
+}
+#body-wrap #pseudo-footer {
+  height: 53px;
+}
+
+#footer-wrap {
+  clear: both;
+  position: relative;
+  height: 53px;
+}
+
+* html {
+  font-size: 62.5%;
+}
+
+html {
+  font-size: 10px;
+  line-height: 2em;
+}
+
+body {
+  color: #666666;
+  font-family: "Leto", "Helvetica", "Arial", "Verdana", sans-serif;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  color: inherit;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  margin-bottom: 0.625em;
+  color: black;
+  text-align: center;
+}
+
+ul.results li {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  margin-bottom: 0.625em;
+  height: 45px;
+  padding-top: 8px;
+}
+
+.header {
+  margin-bottom: 2em;
+  font-size: 1.6em;
+  font-weight:bold;
+  line-height: 1.25em;
+  background: #5a9aa8;
+  color: white;
+  padding: 18px 0 15px 20px;
+}
+
+.settings {
+  padding: 20px;
+}
+
+.video {
+  padding-left: 18px;
+  padding-top: 17px;
+}
+
+.flash-settings {
+  padding-bottom: 10px;
+}
+.flash-settings p {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  font-weight: 200;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.buttons {
+  padding-bottom: 20px;
+}
+.buttons .btn-custom {
+  font-size: 1.4em;
+  line-height: 1.42858em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: #5a9aa8;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 18px 0 15px 0;
+  text-shadow: 0;
+  text-align: center;
+
+  width: 130px;
+}
+.buttons .btn-custom.allow {
+  margin-left: 170px;
+  margin-right: 20px;
+}
+
+.message {
+  margin-bottom: 2em;
+  height: 53px;
+  position: relative;
+}
+.message .btn {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  background: #5a9aa8;
+  color: white;
+  padding: 18px 0 15px 20px;
+  cursor: pointer;
+  left: 50%;
+  margin-left: -135px;
+  margin-right: -135px;
+  padding-left: 0;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  width: 270px;
+}
+
+body {
+  background: #eeeeee;
+}
+
+#body-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  zoom: 1;
+  padding-top: 3em;
+}
+#body-wrap:after, #body-wrap:before {
+  content: "";
+  display: table;
+}
+#body-wrap:after {
+  clear: both;
+}
+
+#header-wrap {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 97.91668%;
+}
+
+#content-top-wrap {
+  zoom: 1;
+  margin-bottom: 2em;
+}
+#content-top-wrap:after, #content-top-wrap:before {
+  content: "";
+  display: table;
+}
+#content-top-wrap:after {
+  clear: both;
+}
+#content-top-wrap .leftcol,
+#content-top-wrap .rightcol {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 47.91668%;
+}
+
+#content-middle-wrap {
+  zoom: 1;
+  margin-bottom: 4em;
+}
+#content-middle-wrap:after, #content-middle-wrap:before {
+  content: "";
+  display: table;
+}
+#content-middle-wrap:after {
+  clear: both;
+}
+#content-middle-wrap > .top {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 97.91668%;
+}
+#content-middle-wrap > .leftcol, #content-middle-wrap > .rightcol {
+  background: white;
+}
+#content-middle-wrap > .leftcol {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 31.25001%;
+}
+#content-middle-wrap > .rightcol {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 64.58334%;
+}
+
+#content-bottom-wrap {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 97.91668%;
+}
+
+#footer-wrap > .inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  zoom: 1;
+}
+#footer-wrap > .inner:after, #footer-wrap > .inner:before {
+  content: "";
+  display: table;
+}
+#footer-wrap > .inner:after {
+  clear: both;
+}
+#footer-wrap > .inner .contacts {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 64.58334%;
+}
+#footer-wrap > .inner .copyright {
+  display: inline;
+  float: left;
+  margin-left: 1.04168%;
+  margin-right: 1.04168%;
+  width: 31.25001%;
+}
+
+#user-system .form-item {
+  zoom: 1;
+  margin-bottom: 1em;
+  background: white;
+  height: 53px;
+  position: relative;
+  width: 100%;
+}
+#user-system .form-item:after, #user-system .form-item:before {
+  content: "";
+  display: table;
+}
+#user-system .form-item:after {
+  clear: both;
+}
+#user-system .form-item label {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  background: #5a9aa8;
+  color: white;
+  padding: 18px 0 15px 20px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  
+  width: 47.8261%;
+}
+#user-system .form-item input[type="text"] {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  color: #666666;
+  border: none;
+  margin-left: 15px;
+  position: relative;
+  top: 4px;
+  width: 165px;
+}
+#user-system .form-item img {
+  position: relative;
+  top: 9px;
+}
+
+form#bottom-form {
+  zoom: 1;
+  margin-bottom: 4em;
+  display: none;
+}
+form#bottom-form:after, form#bottom-form:before {
+  content: "";
+  display: table;
+}
+form#bottom-form:after {
+  clear: both;
+}
+form#bottom-form .form-item {
+  zoom: 1;
+  margin-bottom: 1em;
+}
+form#bottom-form .form-item:after, form#bottom-form .form-item:before {
+  content: "";
+  display: table;
+}
+form#bottom-form .form-item:after {
+  clear: both;
+}
+form#bottom-form .form-item input,
+form#bottom-form .form-item textarea {
+  border: none;
+  padding: 2px;
+}
+form#bottom-form .form-item input {
+  height: 34px;
+}
+form#bottom-form label {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  color: black;
+  float: left;
+  margin-right: 20px;
+  text-align: right;
+  width: 140px;
+}
+form#bottom-form #form-component-subject input,
+form#bottom-form #form-component-subject textarea,
+form#bottom-form #form-component-message input,
+form#bottom-form #form-component-message textarea {
+  width: 776px;
+}
+form#bottom-form #form-component-name,
+form#bottom-form #form-component-email {
+  float: left;
+  width: 470px;
+}
+form#bottom-form #form-component-name input,
+form#bottom-form #form-component-name textarea,
+form#bottom-form #form-component-email input,
+form#bottom-form #form-component-email textarea {
+  width: 306px;
+}
+form#bottom-form #edit-actions {
+  zoom: 1;
+}
+form#bottom-form #edit-actions:after, form#bottom-form #edit-actions:before {
+  content: "";
+  display: table;
+}
+form#bottom-form #edit-actions:after {
+  clear: both;
+}
+form#bottom-form #edit-actions input {
+  font-size: 1.4em;
+  line-height: 1.42858em;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: #5a9aa8;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 160px;
+  padding: 18px 0 15px 0;
+  text-shadow: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 130px;
+}
+
+#footer-wrap {
+  font-size: 1.4em;
+  line-height: 1.42858em;
+  background: #5a9aa8;
+  color: white;
+}
+#footer-wrap a {
+  color: white;
+  text-decoration: underline;
+}
+#footer-wrap .inner {
+  padding: 18px 0 15px 0;
+}
+#footer-wrap .contacts .right {
+  float: right;
+}
+#footer-wrap .contacts .right a {
+  margin-left: 1em;
+}
+#footer-wrap .copyright {
+  text-align: right;
+}

@@ -1,0 +1,27 @@
+//columns
+$grid-columns: 12
+$grid-gutter-width: 20px
+
+// Colors
+$white: #ffffff
+$black: #000000
+$bg: #eeeeee
+$marine: #5a9aa8
+$text: #666666
+$pale: #bebebe
+
+// Font-faces
++font-face("Leto", font-files("LetoSansCondensed.otf"), truetype, $fw-medium, normal)
++font-face("Leto", font-files("LetoSansCondensed-Bold.otf"), truetype, $fw-bold, normal)
++font-face("Leto", font-files("LetoSansCondensed-Thin.otf"), truetype, $fw-light, normal)
+$leto: "Leto", $sans-serif
+
+// Sticky footer
+$footer-height: 53px
++sticky-footer($footer-height, "#body-wrap", "#pseudo-footer", "#footer-wrap")
+
+@mixin marine
+  +font-size(16px)
+  background: $marine  
+  color: $white
+  padding: 18px 0 15px 20px

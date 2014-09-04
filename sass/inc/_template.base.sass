@@ -1,0 +1,83 @@
++establish-baseline
+
+body
+  color: $text
+  font-family: $leto 
+a  
+  color: $text
+  text-decoration: none
+
+h1,
+h2,
+h3
+  a
+    color: inherit
+
+h2
+  $fs: 16px
+  +font-size($fs)
+  +margin-trailer(0.5, $fs)
+  color: $black
+  text-align: center
+
+ul.results
+  li
+    $fs: 16px
+    +font-size($fs)
+    +margin-trailer(0.5, $fs)
+    height: 45px
+    padding-top: 8px
+
+.header
+  +margin-trailer
+  +marine
+
+.settings
+  padding: 20px 
+
+.video
+  padding-left: 18px
+  padding-top: 17px
+
+.flash-settings
+  padding-bottom: 10px
+  p
+    +font-size(16px)
+    font-weight: $fw-light
+    padding-bottom: 5px
+    text-align: center
+
+.buttons
+  padding-bottom: 20px
+  .btn-custom
+    +font-size(14px)
+    +border-radius(0)
+    background: $marine  
+    border: none
+    color: $white
+    cursor: pointer
+    padding: 18px 0 15px 0
+    text-shadow: 0
+    text-align: center
+    text-transform: uppercase
+    width: 130px
+    &.allow
+      margin-left: 170px
+      margin-right: 20px
+
+.message
+  +margin-trailer
+  height: 53px
+  position: relative
+  .btn
+    +marine
+    cursor: pointer
+    left: 50%
+    margin-left: -135px
+    margin-right: -135px
+    padding-left: 0
+    position: absolute
+    right: 50%
+    text-align: center
+    width: 270px
+

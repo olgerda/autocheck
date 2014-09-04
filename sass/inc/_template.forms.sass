@@ -1,0 +1,73 @@
+#user-system
+  .form-item
+    +clearafter
+    +margin-trailer(0.5)
+    background: $white
+    height: 53px
+    position: relative
+    width: 100%
+    label
+      +marine
+      +inline-block
+      text-transform: uppercase
+      width: grid-percentage(220px/460px)
+    input[type="text"]
+      +font-size(16px)
+      color: $text
+      border: none
+      margin-left: 15px
+      position: relative
+      top: 4px
+      width: 165px
+    img
+      position: relative
+      top: 9px
+
+form#bottom-form
+  +clearafter
+  +margin-trailer(2)
+  display: none
+  .form-item
+    +clearafter
+    +margin-trailer(0.5)
+    input,
+    textarea
+      border: none
+      padding: 2px
+    input
+      height: 34px
+  label
+    +font-size(16px)
+    color: $black
+    float: left
+    margin-right: 20px
+    text-align: right
+    width: 140px
+  
+  #form-component-subject,
+  #form-component-message
+    input,
+    textarea
+      width: 776px
+  #form-component-name,
+  #form-component-email
+    float: left
+    width: 470px
+    input,
+    textarea
+      width: 306px
+  #edit-actions
+    +clearafter
+    input
+      +font-size(14px)
+      +border-radius(0)
+      background: $marine  
+      border: none
+      color: $white
+      cursor: pointer
+      margin-left: 160px
+      padding: 18px 0 15px 0
+      text-shadow: 0
+      text-align: center
+      text-transform: uppercase
+      width: 130px

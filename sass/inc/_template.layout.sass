@@ -1,0 +1,43 @@
+body
+  background: $bg
+
+#body-wrap
+  +grid-container
+  +clearafter
+  +padding-leader(1.5)
+
+#header-wrap
+  +grid(12)
+
+#content-top-wrap
+  +clearafter
+  +margin-trailer
+  .leftcol,
+  .rightcol
+    +grid(6)
+
+#content-middle-wrap
+  +clearafter
+  +margin-trailer(2)
+  & > .top
+    +grid(12)
+  & > .leftcol,
+  & > .rightcol
+    background: $white
+  & > .leftcol
+    +grid(4)
+  & > .rightcol
+    +grid(8)
+
+
+#content-bottom-wrap
+  +grid(12)  
+
+#footer-wrap
+  & > .inner
+    +grid-container
+    +clearafter
+    .contacts
+      +grid(8)
+    .copyright
+      +grid(4)
