@@ -1,0 +1,20 @@
+
+function repositionContentContainer() {
+  // this routine is a complete hack to work around the flash "Allow" button bug
+  if ( $("#content").length > 0 ) {
+
+    //Adjust the #content left-margin, since by default it likely isn't an int
+    setLeftMargin();
+    //If the User resizes the window, adjust the #content left-margin
+    $(window).bind("resize", function() { setLeftMargin(); });
+  }
+}
+
+function setLeftMargin() {
+  var newWindowWidth = $(window).width();
+  var mainWellWidth = $("#content").width();
+  // create an integer based left_offset number
+  var left_offset = parseInt((newWindowWidth - mainWellWidth)/2.0);
+  if (left_offset < 0) { left_offset = 0; }
+  $("#content").css("margin-left", left_offset);
+}

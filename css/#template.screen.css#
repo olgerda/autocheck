@@ -272,7 +272,7 @@ body {
 #content-top-wrap:after {
   clear: both;
 }
-#content-top-wrap .leftcol, #content-top-wrap .rightcol {
+#content-top-wrap .leftcol,#content-top-wrap .rightcol {
   display: inline;
   float: left;
   margin-left: 1.04168%;
@@ -307,7 +307,6 @@ body {
   margin-left: 1.04168%;
   margin-right: 1.04168%;
   width: 31.25001%;
-  height: 223px;
 }
 #content-middle-wrap > .rightcol {
   display: inline;
